@@ -120,9 +120,12 @@ ul {
   display: flex;
   align-items: center;
 }
+
 .contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .site-nav-item:not(:last-child),
@@ -132,6 +135,18 @@ ul {
 .nav-position {
   margin-right: auto;
 }
+.icon-envelope,
+.icon-smartphone {
+  fill: #757575;
+  margin-right: 10px;
+}
+.contacts-link:hover .icon-envelope,
+.contacts-link:focus .icon-envelope,
+.contacts-link:focus .icon-smartphone,
+.contacts-link:hover .icon-smartphone {
+  fill: var(--text-link-selection);
+}
+
 /* ==============================================Footer ===================================*/
 .footer-contacts {
   color: var(--secondary-text-color);
@@ -373,6 +388,10 @@ ul {
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
@@ -382,7 +401,15 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-
+.icon-company {
+  fill: #afb1b8;
+}
+.our-clients-item:hover {
+  border: 1px solid var(--text-link-selection);
+}
+.our-clients-item:hover .icon-company {
+  fill: var(--text-link-selection);
+}
 /* ===========================================PORTFOLIO PAGE=========
 ================================== */
 
