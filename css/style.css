@@ -446,8 +446,8 @@ a {
   display: flex;
   justify-content: center;
 }
-/* ПЕРЕДЕЛАТЬ НА ССЫЛКИ <A>!!! */
-.our-clients-item {
+
+.our-clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
@@ -474,15 +474,15 @@ a {
   fill: #afb1b8;
 }
 
-.our-clients-item:hover {
+.our-clients-link:hover {
   border: 1px solid var(--text-link-selection);
 }
-.our-clients-item:hover .icon-company,
-.our-clients-item:hover .icon-company2,
-.our-clients-item:hover .icon-company3,
-.our-clients-item:hover .icon-company4,
-.our-clients-item:hover .icon-company5,
-.our-clients-item:hover .icon-company6 {
+.our-clients-link:hover .icon-company,
+.our-clients-link:hover .icon-company2,
+.our-clients-link:hover .icon-company3,
+.our-clients-link:hover .icon-company4,
+.our-clients-link:hover .icon-company5,
+.our-clients-link:hover .icon-company6 {
   fill: var(--text-link-selection);
 }
 /* ===========================================PORTFOLIO PAGE=========
