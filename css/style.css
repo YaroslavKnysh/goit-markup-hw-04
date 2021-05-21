@@ -40,7 +40,9 @@ ul {
 .link-decoration {
   text-decoration: none;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -185,7 +187,6 @@ ul {
 }
 .social-footer {
   min-width: 206px;
-  height: 80px;
   margin-left: 70px;
   padding-top: 12px;
 }
@@ -194,6 +195,30 @@ ul {
 }
 .flex-footer {
   display: flex;
+}
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+  fill: #ffffff;
+}
+
+.social-footer-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: #2196f3;
+}
+.social-footer-item:not(:last-child) {
+  margin-right: 10px;
 }
 /* ========================================Hero============================================= */
 
@@ -227,7 +252,7 @@ ul {
 .solutions {
   padding-top: 200px;
   padding-bottom: 200px;
-  border: 1px solid #000000;
+
   box-shadow: 0px 4px 4px 0px #00000040;
   background-image: linear-gradient(
       to right,
@@ -358,6 +383,7 @@ ul {
 .team-position {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
 .our-team-item:not(:last-child) {
   margin-right: 30px;
@@ -370,19 +396,57 @@ ul {
 }
 .team-person-container {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .our-team-item {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
 }
-
+.team-social-link .icon-instagram,
+.team-social-link .icon-twitter,
+.team-social-link .icon-facebook,
+.team-social-link .icon-linkedin {
+  fill: #afb1b8;
+}
+.team-social-list {
+  display: flex;
+}
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #2196f3;
+}
+.team-social-link:hover .icon-instagram,
+.team-social-link:focus .icon-instagram,
+.team-social-link:hover .icon-twitter,
+.team-social-link:focus .icon-twitter,
+.team-social-link:hover .icon-facebook,
+.team-social-link:focus .icon-facebook,
+.team-social-link:hover .icon-linkedin,
+.team-social-link:focus .icon-linkedin {
+  fill: #ffffff;
+}
+.team-social-container {
+  padding: 0 32px 30px;
+}
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* -------------------Постоянные клиенты----------------------- */
 .our-clients-list {
   display: flex;
   justify-content: center;
 }
+/* ПЕРЕДЕЛАТЬ НА ССЫЛКИ <A>!!! */
 .our-clients-item {
   width: 170px;
   height: 92px;
@@ -401,13 +465,24 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.icon-company {
+.icon-company,
+.icon-company2,
+.icon-company3,
+.icon-company4,
+.icon-company5,
+.icon-company6 {
   fill: #afb1b8;
 }
+
 .our-clients-item:hover {
   border: 1px solid var(--text-link-selection);
 }
-.our-clients-item:hover .icon-company {
+.our-clients-item:hover .icon-company,
+.our-clients-item:hover .icon-company2,
+.our-clients-item:hover .icon-company3,
+.our-clients-item:hover .icon-company4,
+.our-clients-item:hover .icon-company5,
+.our-clients-item:hover .icon-company6 {
   fill: var(--text-link-selection);
 }
 /* ===========================================PORTFOLIO PAGE=========
