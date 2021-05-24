@@ -188,13 +188,14 @@ a {
 .social-footer {
   min-width: 206px;
   margin-left: 70px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
 }
 .social-footer-list {
   display: flex;
 }
 .flex-footer {
   display: flex;
+  align-items: baseline;
 }
 .icon-instagram,
 .icon-twitter,
